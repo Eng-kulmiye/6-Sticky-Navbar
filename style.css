@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+}
+.top-container{
+    background-image: url(./bac.webp);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.top-container h1{
+    font-size: 50px;
+    color: white;
+    letter-spacing: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.text{
+    margin: 50px 5%;
+    font-family: sans-serif;
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,.4);
+    transition: background 0.6s;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    margin: 0 10px;color: black;
+    font-family: cursive;
+}
+.navbar ul li a:hover{
+    color: red;
+}
+.navbar.active{
+    background-color: black;
+}
+.navbar.active ul li a{
+    color: white;
+}
